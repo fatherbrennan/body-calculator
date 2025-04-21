@@ -1,0 +1,19 @@
+# Build
+/dist
+/server
+
+# Development
+node_modules
+*.local
+.env
+
+# Cache
+tmp
+.cache
+.DS_Store
+.temp
+tsconfig.tsbuildinfo
+
+# Logs
+logs
+*.log

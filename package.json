@@ -1,0 +1,45 @@
+{
+  "name": "body-calculator",
+  "description": "Simple app for calculating various body compositions.",
+  "engines": {
+    "node": "^18.17.0 || ^20.3.0 || >=21.0.0"
+  },
+  "engines-annotation": "Mostly required by sharp which needs a Node-API v9 compatible runtime",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun run build.client && vite build -c adapters/static/vite.config.ts",
+    "build.client": "vite build",
+    "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.qwik": "qwik build",
+    "build.types": "tsc --incremental --noEmit",
+    "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "process": "biome check",
+    "process.force": "biome check --fix --unsafe",
+    "format": "biome format --write",
+    "lint": "biome lint --write",
+    "lint.check": "biome lint",
+    "preview": "qwik build preview && vite preview --open",
+    "start": "vite --open --mode ssr",
+    "test": "vitest",
+    "qwik": "qwik"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@builder.io/qwik": "^1.13.0",
+    "@builder.io/qwik-city": "^1.13.0",
+    "@qwikdev/pwa": "^0.0.4",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/node": "20.14.11",
+    "eruda": "^3.4.1",
+    "tailwindcss": "^4.1.4",
+    "typescript": "5.4.5",
+    "undici": "*",
+    "vite": "5.3.5",
+    "vite-tsconfig-paths": "^4.2.1",
+    "vitest": "^3.1.1"
+  }
+}
