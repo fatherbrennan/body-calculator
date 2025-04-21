@@ -1,0 +1,1 @@
+import{_ as o}from"./q-7J8Whc3t.js";import{c as t,q as a}from"./q-D5DYOS3k.js";const r={title:"Body Calculator",meta:[{name:"description",content:"Simple app for calculating various body compositions."}]},s=t(a(()=>o(()=>import("./q-CALHpDJv.js"),[]),"s_DsMUUF3GxXY"));export{s as default,r as head};
