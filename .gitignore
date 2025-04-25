@@ -12,6 +12,7 @@ tmp
 .cache
 .DS_Store
 .temp
+.vite
 tsconfig.tsbuildinfo
 
 # Logs

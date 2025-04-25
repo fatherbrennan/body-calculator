@@ -27,7 +27,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "cSpell.words": ["fatherbrennan", "qwik", "qwikdev", "qwikest"],
+  "cSpell.words": ["fatherbrennan", "qwik", "qwikdev", "qwikest", "vite"],
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"
   },
