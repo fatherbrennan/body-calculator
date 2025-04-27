@@ -1,9 +1,18 @@
 import { describe, expect, test } from 'vitest';
 
 import { ASSET_VERSION } from '~/constants';
-import { v } from './url';
+import { v, withTrailingSlash } from './url';
 
 describe('url utilities', async () => {
+  test('withTrailingSlash', async () => {
+    expect(withTrailingSlash('hi')).toBe('hi/');
+    expect(withTrailingSlash('hi/')).toBe('hi/');
+    expect(withTrailingSlash('hi/there')).toBe('hi/there/');
+    expect(withTrailingSlash('hi/there/')).toBe('hi/there/');
+    expect(withTrailingSlash('hi/there/123')).toBe('hi/there/123/');
+    expect(withTrailingSlash('hi/there/123/')).toBe('hi/there/123/');
+  });
+
   test('v', async () => {
     // Would prefer to not use a variable (`ASSET_VERSION`), but we are not going to update the test every time the version changes.
     expect(v('hello')).toBe(`hello?v=${ASSET_VERSION}`);

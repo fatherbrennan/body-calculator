@@ -7,7 +7,7 @@
   --safe-area-inset-top: env(safe-area-inset-top, 3rem);
   --safe-area-inset-bottom: env(safe-area-inset-bottom, 2rem);
 
-  /* --color-green-0: #e3f6d4; */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Open Sans', sans-serif;
 
   --spacing-safe-t: var(--safe-area-inset-top);
   --spacing-safe-b: var(--safe-area-inset-bottom);

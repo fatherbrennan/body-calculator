@@ -9,8 +9,10 @@
  * - More code is transferred to the browser than in SSR mode.
  * - Optimizer/Serialization/Deserialization code is not exercised!
  */
-import { type RenderOptions, render } from '@builder.io/qwik';
+import { render } from '@builder.io/qwik';
 import Root from './root';
+
+import type { RenderOptions } from '@builder.io/qwik';
 
 export default function (opts: RenderOptions) {
   return render(document, <Root />, opts);
